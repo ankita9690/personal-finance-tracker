@@ -4,7 +4,13 @@ import cors from "cors";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+const corsOptions = {
+  origin: "https://your-frontend.onrender.com", // Replace with your actual frontend URL
+  methods: "GET,POST,DELETE",
+  credentials: true,
+};
+app.use(cors(corsOptions));
 
 
 mongoose.connect("mongodb+srv://ankitakundliya:Anki1230@cluster0.mx9by2w.mongodb.net/reactprac?retryWrites=true&w=majority") //Replace If you are using Atlas API
