@@ -4,7 +4,7 @@ import TransactionForm from "./components/TransactionForm/TransactionForm";
 import TransactionList from "./components/TransactionList/TransactionList";
 import MonthlyExpensesChart from "./components/MonthlyExpensesChart/MonthlyExpensesChart";
 
-const API_URL = "http://localhost:5000/api/transactions";    // API Connection
+const API_URL = "https://personal-finance-tracker-u10n.onrender.com";    // API Connection
 
 function App() {
   const [transactions, setTransactions] = useState([]);
